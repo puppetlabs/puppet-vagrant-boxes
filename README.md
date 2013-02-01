@@ -41,8 +41,21 @@ Pick one, and define it using:
 
 Make sure <box_name> follows the convention:
 
-    <osdistro>-<version>-<arch>
+    <osdistro>-<derivative>-<version>-<arch>
 
-* osdistro: for example: centos, ubuntu-server, windows
+* osdistro: for example: centos, ubuntu, windows
+* derivative: (optiona) server, desktop
 * version: 8, 2008, 1104
-* arch: x86_64, i386
+* arch: x64, i386
+
+Examples:
+
+    ubuntu-server-1104-x64
+    centos-58-i386
+    windows-2008r2-x64
+
+Naming caveats:
+
+* The name becomes the hostname of the box ... so you have to be careful.
+* Debian/Ubuntu doesn't like underscores in the name.
+* A dot in the box name would create a subdomain, which is probably not desirable.
