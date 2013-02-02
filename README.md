@@ -1,5 +1,7 @@
 This repository contains definitions and files necessary for recreating vagrant boxes suitable for running module tests with.
 
+The primary goal is to create boxes that have very little specialisation at this level, the standard veewee templates should be very rarely modified to keep it simple.
+
 ## Environment setup
 
 *Note:* You'll need Ruby 1.9.3 and Bundler before you begin.
