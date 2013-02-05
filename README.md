@@ -1,5 +1,9 @@
 This repository contains definitions and files necessary for recreating vagrant boxes suitable for running module tests with.
 
+You can access to the produced vagrant boxes here:
+
+<a href="http://puppetlabs.s3.amazonaws.com/pub/vagrant/index.html">http://puppetlabs.s3.amazonaws.com/pub/vagrant/index.html"</a>
+
 The primary goal is to create boxes that have very little specialisation at this level, the standard veewee templates should be very rarely modified to keep it simple.
 
 ## Environment setup
