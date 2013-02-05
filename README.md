@@ -13,28 +13,6 @@ The primary goal is to create boxes that have very little specialisation at this
     $ cd <path to repo>
     $ bundle install
 
-## Rebuilding a box
-
-Pick a box to build:
-
-    $ veewee vbox list
-
-The build it:
-
-    $ veewee vbox build centos-58-x86_64
-
-At this point it will download necessary ISO's and start building a box.
-
-Now validate the box:
-
-    $ veewee vbox validate 'centos-58-x86_64'
-
-And export the vm to a .box file:
-
-    $ vagrant basebox export 'centos-58-x86_64'
-
-Now upload the box located in the current directory 'centos-58-x86_64.box' to the correct S3 bucket.
-
 ## Adding a new definition
 
 Get a list of available definitions:
@@ -65,3 +43,30 @@ Naming caveats:
 * The name becomes the hostname of the box ... so you have to be careful.
 * Debian/Ubuntu doesn't like underscores in the name.
 * A dot in the box name would create a subdomain, which is probably not desirable.
+
+Once you've produced a new box you should modify html/index.html to add it so it can be accessed from the index on S3.
+
+Finally, follow the next steps for building a box.
+
+## Building a box
+
+Pick a box to build:
+
+    $ veewee vbox list
+
+The build it:
+
+    $ veewee vbox build centos-58-x64
+
+At this point it will download necessary ISO's and start building a box.
+
+Now validate the box:
+
+    $ veewee vbox validate 'centos-58-x64'
+
+And export the vm to a .box file:
+
+    $ vagrant basebox export 'centos-58-x64'
+
+Now upload the box located in the current directory 'centos-58-x86_64.box' to the correct S3 bucket, and if you modified the index.html, upload that as well.
+
