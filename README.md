@@ -2,7 +2,7 @@ This repository contains definitions and files necessary for recreating vagrant 
 
 You can access to the produced vagrant boxes here:
 
-<a href="http://puppetlabs.s3.amazonaws.com/pub/vagrant/index.html">http://puppetlabs.s3.amazonaws.com/pub/vagrant/index.html"</a>
+<a href="http://puppet-vagrant-boxes.s3.amazonaws.com/index.html">http://puppet-vagrant-boxes.s3.amazonaws.com/index.html</a>
 
 The primary goal is to create boxes that have very little specialisation at this level, the standard veewee templates should be very rarely modified to keep it simple.
 
