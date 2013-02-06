@@ -68,5 +68,8 @@ And export the vm to a .box file:
 
     $ vagrant basebox export 'centos-58-x64'
 
+## Publishing
+
 Now upload the box located in the current directory 'centos-58-x86_64.box' to the correct S3 bucket, and if you modified the index.html, upload that as well.
 
+If the image is new, or you changed the name, also update the site http://vagrantbox.es/ as well, you can find the repository here: http://github.com/garethr/vagrantboxes-heroku
