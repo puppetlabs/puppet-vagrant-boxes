@@ -1,2 +1,4 @@
 *.box
 .*.swp
+.ruby-version
+.rbenv-gemsets
