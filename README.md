@@ -4,7 +4,7 @@ You can access to the produced vagrant boxes here:
 
 <a href="http://puppet-vagrant-boxes.puppetlabs.com">http://puppet-vagrant-boxes.puppetlabs.com</a>
 
-The primary goal is to create boxes that have very little specialisation at this level, the standard veewee templates should be very rarely modified to keep it simple.
+The primary goal is to create boxes that have very little specialisation at this level, the standard veewee templates should be very rarely modified to keep it simple, and even then bug fix should always be feed back to upstream (ie. VeeWee). This holds for any bugs we find in the templates, and any new templates that are required. In short our goal here is not to fork VeeWee templates, but to provide a snapshot of the template at box build/publish time.
 
 ## Environment setup
 
