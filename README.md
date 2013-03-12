@@ -8,9 +8,20 @@ The primary goal is to create boxes that have very little specialisation at this
 
 ## Environment setup
 
-*Note:* You'll need Ruby 1.9.3 and Bundler before you begin.
+You'll need Ruby 1.9.3 and Bundler before you begin. You should also install a copy of Vagrant from the instructions provided here:
+
+<http://downloads.vagrantup.com/>
+
+Once you have vagrant installed, start by entering the directory where you have cloned this project:
 
     $ cd <path to repo>
+
+*Optional* Create an RVM gemset:
+
+    $ rvm --create --ruby-version use ruby-1.9.3@puppet-vagrant-boxes
+
+Then install the bundle:
+
     $ bundle install
 
 ## Adding a new definition
