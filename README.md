@@ -36,18 +36,22 @@ Pick one, and define it using:
 
 Make sure <box_name> follows the convention:
 
-    <osdistro>-<derivative>-<version>-<arch>
+    <osdistro>-<derivative>-<version>-<arch>-<virtual-type>-<variant>
 
 * osdistro: for example: centos, ubuntu, windows
 * derivative: (optiona) server, desktop
 * version: 8, 2008, 1104
 * arch: x64, i386
+* virtual-type: vbox410, vmware50 (not sure quite how to differentiate these yet from fusion and other vmware products ...)
+* variant (optional):
+    * nocm: designates no configuration management tools were loaded
 
 Examples:
 
-    ubuntu-server-1104-x64
-    centos-58-i386
-    windows-2008r2-x64
+    ubuntu-server-1104-x64-vbox410
+    centos-58-i386-vbox410
+    windows-2008r2-x64-vbox410
+    debian-607-x64-vbox410-nocm
 
 Naming caveats:
 
@@ -77,7 +81,7 @@ Now validate the box:
 
 And export the vm to a .box file:
 
-    $ vagrant basebox export 'centos-58-x64'
+    $ veewee basebox export 'centos-58-x64'
 
 ## Publishing
 
