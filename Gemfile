@@ -1,3 +1,3 @@
 source "http://rubygems.org"
 
-gem 'veewee', '~> 0.3.7'
+gem 'veewee', :git => 'git://github.com/jedi4ever/veewee'
