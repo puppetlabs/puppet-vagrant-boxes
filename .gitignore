@@ -2,4 +2,6 @@
 .*.swp
 .ruby-version
 .rbenv-gemsets
+.bundle
+vendor
 Gemfile.lock
