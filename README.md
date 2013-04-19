@@ -26,13 +26,15 @@ Then install the bundle:
 
 ## Adding a new definition
 
+Note: Change the base command between vbox or fusion depending on your target provider.
+
 Get a list of available definitions:
 
-    $ veewee vbox templates
+    $ veewee [vbox|fusion] templates
 
 Pick one, and define it using:
 
-    $ veewee vbox define '<box_name>' '<template_name>'
+    $ veewee [vbox|fusion] vbox define '<box_name>' '<template_name>'
 
 Make sure <box_name> follows the convention:
 
@@ -42,7 +44,7 @@ Make sure <box_name> follows the convention:
 * derivative: (optiona) server, desktop
 * version: 8, 2008, 1104
 * arch: x64, i386
-* virtual-type: vbox410, vmware50 (not sure quite how to differentiate these yet from fusion and other vmware products ...)
+* virtual-type: type & version. For example: vbox4210, fusion503
 * variant (optional):
     * nocm: designates no configuration management tools were loaded
 
@@ -52,6 +54,7 @@ Examples:
     centos-58-i386-vbox410
     windows-2008r2-x64-vbox410
     debian-607-x64-vbox410-nocm
+    centos-64-x64-fusion503
 
 Naming caveats:
 
@@ -67,21 +70,21 @@ Finally, follow the next steps for building a box.
 
 Pick a box to build:
 
-    $ veewee vbox list
+    $ veewee [vbox|fusion] list
 
-The build it:
+To build it:
 
-    $ veewee vbox build centos-58-x64
+    $ veewee [vbox|fusion] build <box-name>
 
 At this point it will download necessary ISO's and start building a box.
 
 Now validate the box:
 
-    $ veewee vbox validate 'centos-58-x64'
+    $ veewee [vbox|fusion] validate <box-name>
 
 And export the vm to a .box file:
 
-    $ veewee basebox export 'centos-58-x64'
+    $ veewee [vbox|fusion] export 'centos-58-x64'
 
 ## Publishing
 
