@@ -2,25 +2,88 @@
 <p>These boxes are provided to be used by various Puppet projects, so we have a consistent source for testing and other Vagrant work.</p>
 <p>If you want to raise bugs or work on the Veewee sources for these boxes, go to the <a href="https://github.com/puppetlabs/puppet-vagrant-boxes">puppetlabs/puppet-vagrant-boxes</a> on Github.</p>
 <p>These hosts are also indexed from: <a href="http://vagrantbox.es/">http://vagrantbox.es/</a></p>
-<p>Latest hosts, built with VirtualBox 4.2.10 Guest extensions, including variants with -nocm variations (that is, no Puppet or Chef installed). Uploaded 2013/04/09:</p>
-<ul>
-<li><a href="fedora-18-x64-vbox4210.box">fedora-18-x64-vbox4210.box</a></li>
-<li><a href="fedora-18-x64-vbox4210-nocm.box">fedora-18-x64-vbox4210-nocm.box</a></li>
-<li><a href="centos-64-x64-vbox4210.box">centos-64-x64-vbox4210.box</a></li>
-<li><a href="centos-64-x64-vbox4210-nocm.box">centos-64-x64-vbox4210-nocm.box</a></li>
-<li><a href="centos-59-x64-vbox4210.box">centos-59-x64-vbox4210.box</a></li>
-<li><a href="centos-59-x64-vbox4210-nocm.box">centos-59-x64-vbox4210-nocm.box</a></li>
-<li><a href="debian-607-x64-vbox4210.box">debian-607-x64-vbox4210.box</a></li>
-<li><a href="debian-607-x64-vbox4210-nocm.box">debian-607-x64-vbox4210-nocm.box</a></li>
-<li><a href="debian-70rc1-x64-vbox4210.box">debian-70rc1-x64-vbox4210.box</a></li>
-<li><a href="debian-70rc1-x64-vbox4210-nocm.box">debian-70rc1-x64-vbox4210-nocm.box</a></li>
-<li><a href="sles-11sp1-x64-vbox4210.box">sles-11sp1-x64-vbox4210.box</a></li>
-<li><a href="sles-11sp1-x64-vbox4210-nocm.box">sles-11sp1-x64-vbox4210-nocm.box</a></li>
-<li><a href="ubuntu-server-10044-x64-vbox4210.box">ubuntu-server-10044-x64-vbox4210.box</a></li>
-<li><a href="ubuntu-server-10044-x64-vbox4210-nocm.box">ubuntu-server-10044-x64-vbox4210-nocm.box</a></li>
-<li><a href="ubuntu-server-12042-x64-vbox4210.box">ubuntu-server-12042-x64-vbox4210.box</a></li>
-<li><a href="ubuntu-server-12042-x64-vbox4210-nocm.box">ubuntu-server-12042-x64-vbox4210-nocm.box</a></li>
-</ul>
+<p>Latest hosts, built with VirtualBox 4.2.10 Guest extensions, including variants with -nocm variations (that is, no Puppet or Chef installed). Updated 2013/04/24:</p>
+<table style="border: 1px solid;">
+<tr>
+  <th>OS</th>
+  <th>Version</th>
+  <th>Arch</th>
+  <th>Guest Additions</th>
+  <th>Variants</th>
+</tr>
+<tr>
+  <td>fedora</td>
+  <td>18</td>
+  <td>x64</td>
+  <td>vbox4210</td>
+  <td><a href="fedora-18-x64-vbox4210.box">plain</a></td>
+  <td><a href="fedora-18-x64-vbox4210-nocm.box">nocm</a></li>
+</tr>
+<tr>
+  <td>centos</td>
+  <td>6.4</td>
+  <td>x64</td>
+  <td>vbox4210</td>
+  <td><a href="centos-64-x64-vbox4210.box">plain</a></td>
+  <td><a href="centos-64-x64-vbox4210-nocm.box">nocm</a></td>
+</tr>
+<tr>
+  <td>centos</td>
+  <td>6.4</td>
+  <td>x64</td>
+  <td>fusion503</td>
+  <td><a href="centos-64-x64-fusion503.box">plain</a></td>
+  <td><a href="centos-64-x64-fusion503-nocm.box">nocm</a></td>
+</tr>
+<tr>
+  <td>centos</td>
+  <td>5.9</td>
+  <td>x64</td>
+  <td>vbox4210</td>
+  <td><a href="centos-59-x64-vbox4210.box">plain</a></td>
+  <td><a href="centos-59-x64-vbox4210-nocm.box">nocm</a></td>
+</tr>
+<tr>
+  <td>debian</td>
+  <td>607</td>
+  <td>x64</td>
+  <td>vbox4210</td>
+  <td><a href="debian-607-x64-vbox4210.box">plain</a></td>
+  <td><a href="debian-607-x64-vbox4210-nocm.box">nocm</a></td>
+</tr>
+<tr>
+  <td>debian</td>
+  <td>70rc1</td>
+  <td>x64</td>
+  <td>vbox4210</td>
+  <td><a href="debian-70rc1-x64-vbox4210.box">plain</a></td>
+  <td><a href="debian-70rc1-x64-vbox4210-nocm.box">nocm</a></td>
+</tr>
+<tr>
+  <td>sles</td>
+  <td>11sp1</td>
+  <td>x64</td>
+  <td>vbox4210</td>
+  <td><a href="sles-11sp1-x64-vbox4210.box">plain</a></td>
+  <td><a href="sles-11sp1-x64-vbox4210-nocm.box">nocm</a></td>
+</tr>
+<tr>
+  <td>ubuntu-server</td>
+  <td>10.04.4</td>
+  <td>x64</td>
+  <td>vbox4210</td>
+  <td><a href="ubuntu-server-10044-x64-vbox4210.box">plain</a></td>
+  <td><a href="ubuntu-server-10044-x64-vbox4210-nocm.box">nocm</a></td>
+</tr>
+<tr>
+  <td>ubuntu-server</td>
+  <td>12.04.2</td>
+  <td>x64</td>
+  <td>vbox4210</td>
+  <td><a href="ubuntu-server-12042-x64-vbox4210.box">plain</a></td>
+  <td><a href="ubuntu-server-12042-x64-vbox4210-nocm.box">nocm</a></td>
+</tr>
+</table>
 <p>Older hosts built with VirtualBox 4.2.6 guest additions (DEPRECATED as of 2013/04/09):</p>
 <ul>
 <li><a href="centos-63-x64.box">centos-63-x64.box</a></li>

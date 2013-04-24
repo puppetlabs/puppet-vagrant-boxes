@@ -1,98 +1,116 @@
-Vagrant::Config.run do |config|
+Vagrant.configure("2") do |config|
 
   config.vm.define "centos-59-x64-vbox4210" do |v|
     v.vm.box = "centos-59-x64-vbox4210"
-    v.vm.host_name = "centos-59-x64-vbox4210.vm"
+    v.vm.hostname = "centos-59-x64-vbox4210.vm"
     v.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/centos-59-x64-vbox4210.box"
   end
 
   config.vm.define "centos-59-x64-vbox4210-nocm" do |v|
     v.vm.box = "centos-59-x64-vbox4210-nocm"
-    v.vm.host_name = "centos-59-x64-vbox4210-nocm.vm"
+    v.vm.hostname = "centos-59-x64-vbox4210-nocm.vm"
     v.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/centos-59-x64-vbox4210-nocm.box"
   end
 
   config.vm.define "centos-64-x64-vbox4210" do |v|
     v.vm.box = "centos-64-x64-vbox4210"
-    v.vm.host_name = "centos-64-x64-vbox4210.vm"
+    v.vm.hostname = "centos-64-x64-vbox4210.vm"
     v.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/centos-64-x64-vbox4210.box"
+  end
+
+  config.vm.define "centos-64-x64-fusion503" do |v|
+    v.vm.box = "centos-64-x64-fusion503"
+    v.vm.hostname = "centos-64-x64-fusion503.vm"
+    v.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/centos-64-x64-fusion503.box"
+  end
+
+  config.vm.define "centos-64-x64-fusion503-nocm" do |v|
+    v.vm.box = "centos-64-x64-fusion503-nocm"
+    v.vm.hostname = "centos-64-x64-fusion503-nocm.vm"
+    v.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/centos-64-x64-fusion503-nocm.box"
   end
 
   config.vm.define "centos-64-x64-vbox4210-nocm" do |v|
     v.vm.box = "centos-64-x64-vbox4210-nocm"
-    v.vm.host_name = "centos-64-x64-vbox4210-nocm.vm"
+    v.vm.hostname = "centos-64-x64-vbox4210-nocm.vm"
     v.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/centos-64-x64-vbox4210-nocm.box"
+  end
+
+  config.vm.define "centos-64-x64-fusion503-nocm" do |v|
+    v.vm.box = "centos-64-x64-fusion503-nocm"
+    v.vm.hostname = "centos-64-x64-fusion503-nocm.vm"
+    v.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/centos-64-x64-fusion503-nocm.box"
   end
 
   config.vm.define "debian-607-x64-vbox4210" do |v|
     v.vm.box = "debian-607-x64-vbox4210"
-    v.vm.host_name = "debian-607-x64-vbox4210.vm"
+    v.vm.hostname = "debian-607-x64-vbox4210.vm"
     v.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/debian-607-x64-vbox4210.box"
   end
 
   config.vm.define "debian-607-x64-vbox4210-nocm" do |v|
     v.vm.box = "debian-607-x64-vbox4210-nocm"
-    v.vm.host_name = "debian-607-x64-vbox4210-nocm.vm"
+    v.vm.hostname = "debian-607-x64-vbox4210-nocm.vm"
     v.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/debian-607-x64-vbox4210-nocm.box"
   end
 
   config.vm.define "debian-70rc1-x64-vbox4210" do |v|
     v.vm.box = "debian-70rc1-x64-vbox4210"
-    v.vm.host_name = "debian-70rc1-x64-vbox4210.vm"
+    v.vm.hostname = "debian-70rc1-x64-vbox4210.vm"
     v.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/debian-70rc1-x64-vbox4210.box"
   end
 
   config.vm.define "debian-70rc1-x64-vbox4210-nocm" do |v|
     v.vm.box = "debian-70rc1-x64-vbox4210-nocm"
-    v.vm.host_name = "debian-70rc1-x64-vbox4210-nocm.vm"
+    v.vm.hostname = "debian-70rc1-x64-vbox4210-nocm.vm"
     v.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/debian-70rc1-x64-vbox4210-nocm.box"
   end
 
   config.vm.define "fedora-18-x64-vbox4210" do |v|
     v.vm.box = "fedora-18-x64-vbox4210"
-    v.vm.host_name = "fedora-18-x64-vbox4210.vm"
+    v.vm.hostname = "fedora-18-x64-vbox4210.vm"
     v.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/fedora-18-x64-vbox4210.box"
   end
 
   config.vm.define "fedora-18-x64-vbox4210-nocm" do |v|
     v.vm.box = "fedora-18-x64-vbox4210-nocm"
-    v.vm.host_name = "fedora-18-x64-vbox4210-nocm.vm"
+    v.vm.hostname = "fedora-18-x64-vbox4210-nocm.vm"
     v.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/fedora-18-x64-vbox4210-nocm.box"
   end
 
   config.vm.define "sles-11sp1-x64-vbox4210" do |v|
     v.vm.box = "sles-11sp1-x64-vbox4210"
-    v.vm.host_name = "sles-11sp1-x64-vbox4210.vm"
+    v.vm.hostname = "sles-11sp1-x64-vbox4210.vm"
     v.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/sles-11sp1-x64-vbox4210.box"
   end
 
   config.vm.define "sles-11sp1-x64-vbox4210-nocm" do |v|
     v.vm.box = "sles-11sp1-x64-vbox4210-nocm"
-    v.vm.host_name = "sles-11sp1-x64-vbox4210-nocm.vm"
+    v.vm.hostname = "sles-11sp1-x64-vbox4210-nocm.vm"
     v.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/sles-11sp1-x64-vbox4210-nocm.box"
   end
 
   config.vm.define "ubuntu-server-10044-x64-vbox4210" do |v|
     v.vm.box = "ubuntu-server-10044-x64-vbox4210"
-    v.vm.host_name = "ubuntu-server-10044-x64-vbox4210.vm"
+    v.vm.hostname = "ubuntu-server-10044-x64-vbox4210.vm"
     v.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/ubuntu-server-10044-x64-vbox4210.box"
   end
 
   config.vm.define "ubuntu-server-10044-x64-vbox4210-nocm" do |v|
     v.vm.box = "ubuntu-server-10044-x64-vbox4210-nocm"
-    v.vm.host_name = "ubuntu-server-10044-x64-vbox4210-nocm.vm"
+    v.vm.hostname = "ubuntu-server-10044-x64-vbox4210-nocm.vm"
     v.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/ubuntu-server-10044-x64-vbox4210-nocm.box"
   end
 
   config.vm.define "ubuntu-server-12042-x64-vbox4210" do |v|
     v.vm.box = "ubuntu-server-12042-x64-vbox4210"
-    v.vm.host_name = "ubuntu-server-12042-x64-vbox4210.vm"
+    v.vm.hostname = "ubuntu-server-12042-x64-vbox4210.vm"
     v.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/ubuntu-server-12042-x64-vbox4210.box"
   end
 
   config.vm.define "ubuntu-server-12042-x64-vbox4210-nocm" do |v|
     v.vm.box = "ubuntu-server-12042-x64-vbox4210-nocm"
-    v.vm.host_name = "ubuntu-server-12042-x64-vbox4210-nocm.vm"
+    v.vm.hostname = "ubuntu-server-12042-x64-vbox4210-nocm.vm"
     v.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/ubuntu-server-12042-x64-vbox4210-nocm.box"
   end
 end
